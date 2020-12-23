@@ -2,7 +2,7 @@
 Inspired by Jan Küster's Left Sidebar CV
 
 
-![Book Summary Template Preview](https://github.com/latex-ninja/Book-Summary-Template/blob/master/book-summary-template.png)
+![Book Summary Template Preview](https://github.com/sxwang1991/Book-Summary-Template/blob/master/book-summary-template.png)
 
 
 
