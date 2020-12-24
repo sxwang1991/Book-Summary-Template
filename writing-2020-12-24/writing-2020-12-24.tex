@@ -1,0 +1,142 @@
+% A book summary template inspired by Jan Küster's Left Sidebar CV / https://github.com/jankapunkt/latexcv
+
+\documentclass[11pt,a4paper]{article}	
+\usepackage[utf8]{inputenc}	
+
+% some tex-live fonts - choose your own
+
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto}
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+\usepackage{moresize}
+\usepackage{fontawesome}
+
+\usepackage{paracol}
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\setlength{\parindent}{0mm}
+\usepackage{graphicx}
+	
+\usepackage{tikz}				
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+
+\usepackage{transparent}
+\usepackage{color}
+
+\definecolor{maincol}{RGB}{ 225, 0, 0 }
+\definecolor{darkcol}{RGB}{ 70, 70, 70 }
+\definecolor{lightcol}{RGB}{245,245,245}
+
+\usepackage{enumitem}
+\setitemize{label={\color{maincol}\faCheck}}
+
+\usepackage[hidelinks]{hyperref}
+\include{kuestercvelements}
+
+
+%============================================================================%
+\begin{document}
+\columnratio{0.31}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\colseprulecolor{lightcol}
+\begin{paracol}{2}
+
+\includegraphics[width=\linewidth]{bookcover.jpg}
+
+\heading{Overview}
+
+\small
+
+\icontext{Male}{12}{x-chromosome}{black}\\[6pt]	
+\icontext{Book}{12}{Structured Writing}{black}\\[6pt]	
+\icontext{MapMarker}{12}{LPS}{black}\\[6pt]
+\icontext{Calendar}{12}{2020-12-24}{black}\\[6pt]
+
+\vspace{3em}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{figure1.jpg}
+    %\caption{Graph illustrating how far you can go with the same amount of energy if invested deliberately in just one thing versus diffusion}
+    \label{fig:my_label}
+\end{figure}
+
+
+\normalsize
+\switchcolumn
+
+\titlebox{white}{darkcol}{
+
+\bigfont{Structured Writing}
+
+\titletext{The problem-solution pattern}
+
+
+}
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+
+\heading{Topic}
+
+How to keep a good relationship with children
+
+\heading{Problem}
+
+Many parents do not seem to know how to keep a good relationship with their children.
+
+\heading{Details of problem}
+
+They do not know what activities to do or what topics to talk about with their children.
+
+\heading{Solutions}
+
+\begin{itemize}
+    \item Have a family trip.
+    \item Do fun things together.
+    \item Tell stories to young children.
+\end{itemize}
+
+\heading{Evaluation}
+
+All these will contribute to a better relationship with children.
+
+\heading{Sample paragraph}
+\begin{quote}
+Many parents do not seem to know how to keep a good relationship with their children.
+They do not know what activities to do or what topics to talk about with their children.
+Here are a few useful tips.
+Having a family trip sometimes is a wonderful way for all family members to bond together.
+And you and your children can do fun things together, such as playing football or watching their favorite show.
+Besides, a very good activity to bond with your young children is storytelling!
+You can tell them the stories about your childhood.
+All these ways will contribute to a better relationship with your children.
+\end{quote}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{paracol}
+\end{document}
+
