@@ -1,0 +1,143 @@
+% A book summary template inspired by Jan Küster's Left Sidebar CV / https://github.com/jankapunkt/latexcv
+
+\documentclass[11pt,a4paper]{article}	
+\usepackage[utf8]{inputenc}	
+
+% some tex-live fonts - choose your own
+
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto}
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+\usepackage{moresize}
+\usepackage{fontawesome}
+
+\usepackage{paracol}
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\setlength{\parindent}{0mm}
+\usepackage{graphicx}
+	
+\usepackage{tikz}				
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+
+\usepackage{transparent}
+\usepackage{color}
+
+\definecolor{maincol}{RGB}{ 225, 0, 0 }
+\definecolor{darkcol}{RGB}{ 70, 70, 70 }
+\definecolor{lightcol}{RGB}{245,245,245}
+
+\usepackage{enumitem}
+\setitemize{label={\color{maincol}\faCheck}}
+
+\usepackage[hidelinks]{hyperref}
+\include{kuestercvelements}
+
+
+%============================================================================%
+\begin{document}
+\columnratio{0.31}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\colseprulecolor{lightcol}
+\begin{paracol}{2}
+
+\includegraphics[width=\linewidth]{bookcover.jpg}
+
+\heading{Overview}
+
+\small
+
+\icontext{Male}{12}{x-chromosome}{black}\\[6pt]	
+\icontext{Book}{12}{Structured Writing}{black}\\[6pt]	
+\icontext{MapMarker}{12}{LPS}{black}\\[6pt]
+\icontext{Calendar}{12}{2020-12-25}{black}\\[6pt]
+
+%\vspace{1em}
+
+
+
+\heading{Topic}
+
+What to do when your parents are disappointed with you
+
+
+
+\heading{Problem}
+
+Parents may be disappointed when you fail to meet their expectations.
+
+\heading{Solution}
+
+Making your parents believe that you are a responsible person.
+
+\begin{itemize}
+    \item Tell them you have inherited many of their merits.
+    \item Remind them that you have you own life goals as an individual.
+    \item Explain how your lifestyle will help you in a positive way.
+\end{itemize}
+
+\heading{Evaluation}
+
+This may not change their opinions overnight, but eventually it will work.
+
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=\linewidth]{figure1.jpg}
+    %\caption{Graph illustrating how far you can go with the same amount of energy if invested deliberately in just one thing versus diffusion}
+%    \label{fig:my_label}
+%\end{figure}
+
+
+
+
+
+\normalsize
+\switchcolumn
+
+\titlebox{white}{darkcol}{
+
+\bigfont{Structured Writing}
+
+\titletext{The problem-solution pattern}
+
+}
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+
+
+\heading{Sample paragraph}
+
+
+Parents may get disppointed when you fail to meet their expectations.
+They may strongly object to your lifestyle and complain that you are wasting time on unimportant things.
+To solve this problem, you may try to make them understand that you are a responsible person.
+First tell them that you have inherited many of their merits.
+Then remind them that you have your own life goals as an indivial.
+You can also explain how your lifestyle will help you in positive way.
+Yor may not be able to change your parents' opinions overnight, 
+but if you keep trying, it will eventually work.
+
+
+
+
+
+
+
+
+\end{paracol}
+\end{document}
+
